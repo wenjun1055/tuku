@@ -1,0 +1,41 @@
+<?php if($this->pageCount):?>
+    <div class="pagination"><strong>
+    	<ul>
+        <?php if( isset($this->first) ):?>
+            <li clas="pager"><a href="<?php echo $this->url(array('page'=>$this->first));?>">首页</a></li>
+            <?php else: ?>
+            <li><a>首页</a></li>
+        <?php endif;?>
+    
+        <?php if( isset($this->previous) ):?>
+            <li><a href="<?php echo $this->url(array('page'=>$this->previous));?>">&laquo;</a></li>
+            <?php else: ?>
+            <li><a>&laquo;</a></li>
+        <?php endif;?>
+
+        <?php foreach ($this->pagesInRange as $page):?>
+            <?php if($page !=$this->current):?>
+                <li><a href="<?php echo $this->url(array('page'=>$page));?>"><?php echo $page;?></a></li>
+            <?php else :?>
+                <li class="active"><a><?php echo $page;?></a></li>
+            <?php endif;?>
+        <?php endforeach;?>
+   
+        <?php if(isset($this->next)):?>
+           <li> <a href="<?php echo $this->url(array('page'=>$this->next));?>">&raquo;</a></li>
+        <?php else:?>
+            <li><a>&raquo;</a></li>
+        <?php endif;?>
+   
+         <?php if( isset($this->last) ):?>
+            <li><a href="<?php echo $this->url(array('page'=>$this->last));?>">尾页</a></li>
+            <?php else: ?>
+            <li><span class="disabled">尾页</span></li>
+        <?php endif;?>
+ <!--   
+        <li><span>第<?php echo $this->current;?>页</span></li>
+        <li><span>共<?php echo $this->pageCount;?>页</span></li>
+        <li><span>共<?php echo $this->totalItemCount;?>条</span></li> -->    
+        </ul></strong>
+    </div>
+<?php endif;?>

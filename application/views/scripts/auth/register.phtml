@@ -1,0 +1,107 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>喵魂图床</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="喵魂图床,图床,相册,外链图床">
+    <meta name="author" content="喵魂图床,图床,相册,外链图床">
+
+    <!-- Le styles -->
+    <link href="/public/css/bootstrap.css" rel="stylesheet">
+    <link href="/public/css/bootstrap-responsive.css" rel="stylesheet">
+    <link href="/public/css/docs.css" rel="stylesheet">
+
+    <!-- Le HTML5 shim, for IE6-8 support of HTML5 elements -->
+    <!--[if lt IE 9]>
+      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+  </head>
+	<body>
+		<div class="navbar navbar-fixed-top">
+			<div class="navbar-inner">
+				<div class="container">
+					<ul class="nav">
+						<li>
+							<a href="http://disk.catsoul.cn">喵魂网盘</a>
+						</li>
+						<li class="active">
+							<a href="http://1.wjtuku.sinaapp.com">喵魂图床</a>
+						</li>
+						<li>
+							<a href="http://smgc.in">数码广场</a>
+						</li>
+						<li>
+							<a href="http://wenjun.in">花生博客</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	<div class="container-fluid">
+		<div class="row-fluid">
+		<div class="span4">&nbsp;</div>
+		
+		
+			<div class="span4">
+				<div class="hero-unit">
+					
+					<div class="page-header">
+						<h1><center>喵魂图床</center></h1>
+						<hr>
+						<h2>用户注册</h2>	
+					</div>
+					
+					<form class="form" method="post" action="/auth/reg">
+						<fieldset>
+							<div class="control-group">
+								<label class="control-label" for="input01"></label>
+								<div class="controls">
+									<input type="email" class="input-xlarge" id="input01" placeholder="Email" name="email">
+								</div>
+							</div>
+							<div class="control-group">
+								<div class="controls">
+									<input type="password" class="input-xlarge" id="input01" placeholder="密码" name="password">
+								</div>
+							</div>
+							<div class="control-group">
+								<div class="controls">
+									<div class="input-append">
+										<input type="text" class="span8" id="input01" placeholder="验证码" name="vcode">
+										<span class="add-on"><img src="<?php echo $this->vcode;?>"></span>
+									</div>
+								</div>
+							</div>
+							<input type="hidden" name="saeut" value="<?php echo $this->saeut;?>">
+							<input type="hidden" name="sessid" value="<?php echo $this->sessid;?>">
+							<button type="submit" class="btn"><strong>注&nbsp;&nbsp;&nbsp;册</strong></button>
+							<a href="/" class="btn pull-right"><strong>>>&nbsp;&nbsp;&nbsp;登录</strong></a>
+							
+						</fieldset>
+					</form>
+					
+				</div>
+			</div>
+			
+			<div class="span6">
+			</div>
+			
+	</div>
+  <footer class="footer">
+				<div class="pull-left">
+	 		<strong>© 2012 喵魂</strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+	 		<strong><a href="http://wenjun.in/?page_id=387">意见/建议/留言</a></strong>
+	 	</div>
+	 	<div class="pull-right">
+			
+			<a href="http://www.miibeian.gov.cn/" target="_blank"><strong>蜀ICP备11021029号</strong></a>&nbsp;&nbsp;&nbsp;&nbsp;
+			<a href="http://sae.sina.com.cn" target="_blank"><img src="http://static.sae.sina.com.cn/image/poweredby/117X12px.gif" title="Powered by Sina App Engine"></a>
+			<script src="http://s95.cnzz.com/stat.php?id=4232969&web_id=4232969" language="JavaScript"></script>
+		</div>
+			</footer>
+
+  </body>
+</html>
