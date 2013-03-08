@@ -6,3 +6,5 @@ tuku
 使用了bootstrap，mysql，Zend Framework
 
 原网址：tuku.catsoul.cn
+
+完成于：2012年6月
